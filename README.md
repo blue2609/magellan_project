@@ -92,6 +92,6 @@ python sftp_sync.py <ping_sftp_interval>
 
 The program will now:
 - Add the content of any new **ASX300_NCS_CLS** files in SFTP server to `archived_cls` table in `archive_db`.
-- Copy any modifications made to **ASX300_NCS_CLS** files in the SFTP server to its corresponding records in `archived_cls` table 
+- Check any modifications made to **ASX300_NCS_CLS** files in the SFTP server and update corresponding records in `archived_cls` table accordingly
 
 
