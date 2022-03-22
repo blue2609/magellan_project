@@ -51,7 +51,7 @@ pip install -r requirements.txt
 ```
 ## Deploy PostgreSQL Databases
 
-First of all, please ensure that there'si no services running on your local machine's `localhost:5432`
+First of all, please ensure that there'si no services running on your local machine's `localhost:5432`and there's also nothing running on `localhost:5433` as these 2 ports are going to be used by the PostgreSQL databases in this project
 
 From the root directory of the project, run 
 
