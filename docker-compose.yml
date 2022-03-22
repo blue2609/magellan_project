@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  sftp_db:
+    image: postgres:latest
+    restart: always
+    env_file:
+      - ./docker/sftp_db.env
+    volumes:
+      - .sftp_db_data:/var/lib/postgresql/data
+      - ./sftp_db_init:/docker-entrypoint-initdb.d
+    ports:
+      - 5432:5432
+  
+  archive_db:
+    image: postgres:latest
+    restart: always
+    env_file:
+      - ./docker/archive_db.env
+    volumes:
+      - .archive_db_data:/var/lib/postgresql/data
+      - ./archive_db_init:/docker-entrypoint-initdb.d
+    ports:
+      - 5433:5432

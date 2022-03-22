@@ -1,0 +1,15 @@
+# database data
+.dbdata
+
+# IDE directories
+.vscode
+
+# Python cache
+*/__pycache__/
+
+# sandbox/testing directories
+python_test
+sample_data
+
+# macos files
+.DS_Store

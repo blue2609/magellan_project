@@ -1,0 +1,22 @@
+# Python test/sandbox for testing
+python_test/
+
+# sample_data directory  
+sample_data*/
+
+# config and .env files
+config.ini
+docker_config.env
+
+# Database data
+.sftp_db_data/
+.archive_db_data/
+
+# Python caches
+__pycache__/
+
+#IDE Data
+.vscode
+
+# macos files
+.DS_Store
