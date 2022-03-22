@@ -20,7 +20,7 @@ From the root directory of the project, run
 docker-compose-up
 ```
 
-This will deploy 2 databases in 2 separate containers, `sftp_db` and `archive_db`.  Once the user receives a message saying 
+This will deploy 2 databases `sftp_db` and `archive_db` in 2 separate containers.  Once the user receives a message saying 
 
 ```
 LOG:  database system is ready to accept connections
