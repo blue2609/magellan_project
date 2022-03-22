@@ -13,7 +13,7 @@ def init_config():
 
 def init_args():
 	parser = argparse.ArgumentParser()
-	parser.add_argument('loop_seconds', help='Tells the program to ping the SFTP server every x no. of seconds', type=int)
+	parser.add_argument('ping_sftp_interval', help='Tells the program to ping the SFTP server every x no. of seconds', type=int)
 	return parser.parse_args()
 
 def main():
@@ -40,7 +40,7 @@ def main():
 
 	while True:
 		try:
-			time.sleep(args.loop_seconds)
+			time.sleep(args.ping_sftp_interval)
 			sftp_server.sync_files_with_db()
 		except KeyboardInterrupt:
 			print("Keyboard interrupt is detected, closing connection to SFTP and sftp_db")
